@@ -33,8 +33,8 @@ Stop all actions, and stop taking in any future requests <br>
 ##### TEST 8 -Complex Mixed-Direction Request Stack, Multiple opposite request stack together while elevator going up or down <br>
 
 ### Unimplemented features
-No implementation of multiple elevators
-No implementation of weight limits in elevators
-No implementation of floor limit each elevator can have
-No asynchronous concurrency
-No power failure or maintenance recovery
+No implementation of multiple elevators <br>
+No implementation of weight limits in elevators <br>
+No implementation of floor limit each elevator can have <br>
+No asynchronous concurrency <br>
+No power failure or maintenance recovery <br>
