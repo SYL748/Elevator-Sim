@@ -31,6 +31,26 @@ Perform which ever request sent first
 ##### TEST 7 - Emergency stop <br>
 Stop all actions, and stop taking in any future requests <br>
 ##### TEST 8 -Complex Mixed-Direction Request Stack, Multiple opposite request stack together while elevator going up or down <br>
+Choose test cases by changing the name of test e.g(test5) in the forloop for (ReqEvent e : test5) in line 47
+```
+while (tick < 25) {
+            System.out.printf("TICK %d\n", tick);
+            e1.progress();
+            for (ReqEvent e : test5) {        <- Change name of test5 
+                if (e.tick == tick)
+                    if (e.emergency) {
+                        e1.emergencyStop();
+                    } else {
+                        e1.addRequest(e.from, e.to);
+                    }
+            }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ignored) {
+            }
+            tick++;
+        }
+```
 
 ### Unimplemented features
 No implementation of multiple elevators <br>
